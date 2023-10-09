@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Entete -->
+    <head>
+        <title>Nao Trambouze</title>
+        <meta charset="UTF-8" />
+        <link href="portfo_stl.css" rel="stylesheet"/>
+        <script></script>
+        <style></style>
+        <title>Boilerplate HTML5</title>
+    </head>
+
+    <!-- Partie blog -->
+    <body>
+        <header>
+            <nav>
+                <ul aria-label="Menus de navigation" class="menu">
+                  <li><a href="#Blog">Blog</a></li>
+                  <li><a href="#Photo">Photo de prophile</a></li>
+                  <li><a href="#Contact">Adresses Email</a></li>
+                  <li><a href="#Localosation">Localosation</a></li>
+                  <li><a href="#Apropos">À propos de moi</a></li>
+                  <li><a href="#CV">CV</a></li>
+                  <li><a href="#Formulaire">Formulaire de contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div role="main">
+            <h1 id="Blog">
+                Mon blog
+            </h1>
+            <h2>
+                <span class="content">Articles récents</span>
+            </h2>
+            <div class="inverse">
+                <section>
+                    <article class="inter_art">
+                        <article>
+                            <h3 class="content">20 Octobre 2022</h3>
+                            <nav>
+                                <a title="Nouvelle page : Article concernant mon chat." href="article1.html" class="link_bg"> Mon chat est une vieille...</a>
+                            </nav>
+                        </article>
+                        <article>
+                            <h3>25 Novembre 2022</h3>
+                            <nav>
+                                <a title="Nouvelle page : Article concernant Saizeriya." href="article2.html" class="link_bg"> Nouveau Saizeriya!</a>
+                            </nav>
+                        </article>
+                        <article>
+                            <h3>16 Mai 2023</h3>
+                            <nav>
+                                <a title="Nouvelle page : Article concernant mon integration à Supinfo." href="article3.html" class="link_bg"> Je suis pris par Supinfo. </a>
+                            </nav>
+                        </article>
+                    </article>
+                </section>
+            </div>
+            <hr/>
+
+            <!-- Partie portfolio -->
+            <h1>
+                Mon portfolio
+            </h1>
+
+            <!-- Photo de prophile -->
+            <h2 id="Photo">
+                <span class="content">1: Photo de prophile</span>
+            </h2>
+            <section>
+                <img 
+                    src="prophil.JPG"
+                    alt="Un jeune homme ayant des cheveux longs pris par devant."      
+                    class="fixpls"  
+                />
+                <figcaption>Nao Trambouze ; 19ans</figcaption>
+            </section>
+            <hr/>
+
+            <!-- Moyen de contact -->
+            <h2 id="Contact">
+                <span class="content">2: Moyen de contact</span>
+            </h2>
+            <section>
+                <p><b>Email:</b></p>
+                <ul aria-label="Les adresses Email que j'utilise" class="emails">
+                    <li>nei1stshooter@gmail.com</li>
+                    <br/>
+                    <li>nao.trambouze@supinfo.com</li>
+                </ul>
+            </section>
+            <hr/>
+
+            <!-- Localisation -->
+            <h2 id="Localosation">
+                <span class="content">3: Localisation</span>
+            </h2>
+            <section>
+                <p>Tokyo, Kitaku Akabanedai</p>
+            </section>
+            <hr/>
+
+            <!-- À propos de moi -->
+            <h2 id="Apropos">
+                <span class="content">4: À propos de moi</span>
+            </h2>
+            <section>
+                <p>
+                    Né au Japon, vécu pendant 7ans en France et le reste de temps au Japon.
+                </p>
+                <p>
+                    Ma plupart de scolarité est passée dans les écoles françaises, où les autres camarades parlaient aussi en japonais.
+                </p>
+                <p>
+                    Grâce à des jeux de puzzle que je pratiquais dans mon enfance, j'ai la passion à étudier les fonctionnements logiques des aspects informatiques.
+                </p>
+            </section>
+            <hr/>
+
+            <!-- CV -->
+            <h2 id="CV">
+                <span class="content">5: CV</span>
+            </h2>
+            <section class="no_border">
+                <table>
+                    <th>
+                        Frise de scolarité
+                    </th>
+                    <th>
+                        Mes expériences
+                    </th>
+                    <th>
+                        Mes compétences
+                    </th>
+                    <tbody>
+                        <td>Ecole internationale de Lyon
+                            <br/>Ecole chrétienne privée de Roanne
+                            <br/>Lycée français international de Tokyo
+                        </td>
+                        <td>J'en n'ai pas encore</td>
+                        <td>
+                            <p>Création des jeux sur les deux moteurs :</p> 
+                            <p>Pygame et Pixel du Python</p>
+                        </td>
+                    </tbody>
+                </table>
+            </section>
+            <hr/>
+
+            <!-- Formulaire de contact -->
+            <h2 id="Formulaire">
+                <span class="content">6: Formulaire de contact</span>
+            </h2>
+            <section>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <div>
+                        <input type="hidden" name="access_key" value="a9c6e900-cd44-4234-ae94-6d0208cd8a80"/>
+                    </div>
+                    <div>
+                        <label for="name">Nom:</label>
+                        <input type="name" name="Nom" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input aria-labelledby="email" type="email" name="Email" required>
+                    </div>
+                    <div>
+                        <label for="tel">Tel:</label>
+                        <input type="tel" name="Tel" optional>
+                    </div>
+                    <div>
+                        <label for="message"></label>
+                        <textarea name="message" optional></textarea>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Choisissez votre tranche d'âge</legend>
+
+                            <div>
+                                <div>
+                                    <label for="age-0-18">0-18</label>
+                                    <input type="radio" id="age-0-18" name="age" value="young"/>
+                                </div>
+                                <div>
+                                    <label for="age-18+">plus de 18</label>
+                                    <input type="radio" id="age-18+" name="age" value="adult"/>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label for="checkbox">J'accepte d'être recontacté:</label>
+                        <input type="checkbox" name="J'accepte d'être recontacté" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>
